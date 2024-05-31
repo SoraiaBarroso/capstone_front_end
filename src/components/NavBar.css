@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    margin: 0 6em;
+  }
+  
+  ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    font-size: large;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  li a{
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  a:visited{
+    color: #333333;
+  }
+  
+  p{
+    margin: 0;
+  }
