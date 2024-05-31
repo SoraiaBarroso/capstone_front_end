@@ -1,9 +1,9 @@
-main{
+.main-section{
     background-color: #495E57;
     height: 50vh;
     color: #fff;
     display: flex;
-    padding: 0 6em;
+    padding: 0 10em;
 }
 
 .left-section{
@@ -40,6 +40,7 @@ button{
     background-color: #F4CE14;
     color: #333333;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .right-section{

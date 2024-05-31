@@ -4,7 +4,7 @@ import dish from '../assets/restauranfood.jpg';
 function Main(){
     return (
         <>
-            <main>
+            <section className='main-section'>
                 <div className="left-section">
                     <h1>Little Lemon</h1>
                     <h3>Chicago</h3>
@@ -18,7 +18,7 @@ function Main(){
                 <div className="right-section">
                     <img className="dish-main" src={dish} alt="main"/>
                 </div>
-            </main>
+            </section>
         </>
     );
 }

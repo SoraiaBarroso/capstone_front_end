@@ -3,7 +3,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 6em;
-    margin: 0 6em;
+    margin: 0 10em;
   }
   
   ul{
@@ -26,6 +26,10 @@ nav{
   
   a:visited{
     color: #333333;
+  }
+  
+  a:hover{
+    opacity: .8;
   }
   
   p{
