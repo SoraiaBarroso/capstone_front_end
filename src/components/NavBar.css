@@ -8,7 +8,7 @@ nav{
   
   ul{
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: space-between;
     font-size: large;
   }
@@ -19,7 +19,9 @@ nav{
   
   li a{
     color: #333333;
+    font-weight: 600;
     text-decoration: none;
+    text-wrap: nowrap;
   }
   
   a:visited{
