@@ -3,7 +3,14 @@ export const content = [
   "./src/**/*.{js,jsx,ts,tsx}",
 ];
 export const theme = {
-  extend: {},
+  extend: {
+    colors: {
+      'primary-green': '#495E57',
+      'primary-yellow': '#F4CE14',
+      'text-black': '#333333',
+      'text-white': '#ffff'
+    }
+  },
 };
 export const plugins = [];
 
