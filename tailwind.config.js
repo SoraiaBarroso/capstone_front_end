@@ -6,6 +6,7 @@ export const theme = {
   extend: {
     colors: {
       'primary-green': '#495E57',
+      'primary-orange': '#FB8700',
       'primary-yellow': '#F4CE14',
       'text-black': '#333333',
       'text-white': '#ffff'
