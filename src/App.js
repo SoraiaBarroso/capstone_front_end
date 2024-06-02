@@ -1,6 +1,8 @@
 import NavBar from './components/NavBar';
 import Main from './components/Main'
 import Specials from './components/Specials';
+import Testimonials from './components/Testimonials';
+import Story from './components/Story';
 
 import {  Routes, Route } from 'react-router-dom';
 
@@ -17,6 +19,8 @@ function App() {
             <Route path='/' element={<Main />}></Route>
           </Routes>
           <Specials />
+          <Testimonials/>
+          <Story />
       </main>
       <footer>
         Footer

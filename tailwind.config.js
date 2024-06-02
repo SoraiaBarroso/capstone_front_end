@@ -8,7 +8,7 @@ export const theme = {
       'primary-green': '#495E57',
       'primary-orange': '#FB8700',
       'primary-yellow': '#F4CE14',
-      'text-black': '#333333',
+      'text-black': '#333',
       'text-white': '#ffff'
     }
   },

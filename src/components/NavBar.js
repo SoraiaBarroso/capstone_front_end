@@ -5,7 +5,7 @@ function NavBar() {
     return (
       // React fragment
       <>
-        <nav className='flex justify-between items-center 2xl:px-48 sm:px-12 h-20'>
+        <nav className='flex justify-between items-center 2xl:px-56 sm:px-12 h-20'>
             <Link to="/">
               <img className='sm:w-20 2xl:w-48 md:w-40' src={logo} alt="Logo"/>
             </Link>
