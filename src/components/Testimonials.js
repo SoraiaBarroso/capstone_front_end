@@ -2,7 +2,6 @@ import TestimonalsCard from './UI/TestimonialsCard';
 import user from '../assets/user.avif'
 import user2 from '../assets/user2.avif'
 import user3 from '../assets/user3.avif'
-import lemon from '../assets/lemon.png'
 import lemonYellow from '../assets/lemonYellow.png'
 
 function Testimonials() {

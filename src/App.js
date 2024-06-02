@@ -15,9 +15,10 @@ function App() {
       <meta name="og:image" content="capstone-front-end\src\assets\Logo.svg"/>
       <NavBar />
       <main>
-          <Routes>
+          <Main />
+          {/* <Routes>
             <Route path='/' element={<Main />}></Route>
-          </Routes>
+          </Routes> */}
           <Specials />
           <Testimonials/>
           <Story />
