@@ -24,16 +24,16 @@ function Testimonials() {
     ];
 
     return(
-        <section className='2xl:px-56 w-full sm:px-12 flex flex-col justify-center items-center mt-28 relative z-10'>
+        <section className='2xl:px-56 2xl:mt-52 w-full sm:px-12 flex flex-col justify-center items-center sm:mt-40 relative'>
             <h1 className="text-primary-green text-4xl font-bold">Testimonials</h1>
             <h3 className='text-primary-orange text-2xl mt-4'>Read what others have to say about us</h3>
-            <div className="grid grid-cols-3 w-full gap-40 mt-28">
+            <div className="grid 2xl:grid-cols-3 sm:grid-cols-1 w-full gap-40 mt-28">
                 {testimonials.map((testimonial, index) => (
                     <TestimonalsCard key={index} name={testimonial.name} review={testimonial.review} srcPicture={testimonial.srcPicture}/>
                 ))}
             </div>
-            <img className='absolute start-10 h-52 transform rotate-[38deg]' alt='lemon background' src={lemonYellow}></img>
-            <img className='absolute end-10 top-4 -z-50 h-52 transform' alt='lemon background' src={lemonYellow}></img>
+            <img className='absolute 2xl:start-10 h-52 transform rotate-[38deg] sm:bottom-20 sm:start-10' alt='lemon background' src={lemonYellow}></img>
+            <img className='absolute 2xl:end-12 2xl:top-14 -z-50 h-52 transform sm:top-32 sm:end-12 sm:z-10' alt='lemon background' src={lemonYellow}></img>
         </section>
     )
 }

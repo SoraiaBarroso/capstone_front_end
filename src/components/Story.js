@@ -3,20 +3,20 @@ import cookers2 from '../assets/cookers2.jpg'
 
 function Story() {
     return(
-        <section className="2xl:px-56 mt-72 flex h-[35em]" id="story">
-            <div className="flex flex-col w-1/2">
+        <section className="2xl:px-56 2xl:mt-80 mt-36 sm:mt-40 flex 2xl:flex-row 2xl:h-[35em] sm:flex-col sm:justify-center sm:items-center">
+            <div className="flex flex-col 2xl:h-full 2xl:w-1/2 sm:w-3/5">
                 <h1 className="text-primary-green text-4xl font-bold">Our Story</h1>
-                <p className="mt-8 text-xl font-medium w-8/12">
+                <p className="mt-8 text-xl font-medium 2xl:w-8/12">
                     Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant.
                 </p>
-                <p className="mt-8 text-xl font-medium w-8/12">
+                <p className="mt-8 text-xl font-medium 2xl:w-8/12">
                     To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and 
                     led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.
                 </p>
             </div>
-            <div className="w-1/2 flex relative">
-                <img src={cookers1} className='w-1/2 h-96 object-cover absolute start-24 rounded-xl z-20'></img>
-                <img src={cookers2} className='w-1/2 h-96 object-cover absolute end-0 bottom-0 rounded-xl'></img>
+            <div className="2xl:w-1/2 2xl:h-full flex relative sm:h-[34em] sm:mt-16 sm:w-3/5">
+                <img src={cookers1} alt='founders' className='2xl:w-1/2 2xl:h-96 sm:w-[21em] object-cover absolute 2xl:start-0 sm:end-0 rounded-xl z-20'></img>
+                <img src={cookers2} alt='founders' className='2xl:w-1/2 2xl:h-96 sm:w-[21em] object-cover absolute 2xl:start-48 2xl:bottom-0 sm:start-0 sm:bottom-40 rounded-xl'></img>
             </div>
         </section>
     )

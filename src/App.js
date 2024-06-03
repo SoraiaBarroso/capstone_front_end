@@ -4,6 +4,7 @@ import Specials from './components/Specials';
 import Testimonials from './components/Testimonials';
 import Story from './components/Story';
 import Footer from './components/Footer';
+import Reservation from './components/Reservation';
 
 import {  Routes, Route } from 'react-router-dom';
 
@@ -16,10 +17,10 @@ function App() {
       <meta name="og:image" content="capstone-front-end\src\assets\Logo.svg"/>
       <NavBar />
       <main>
+          <Routes>
+            <Route path='/reservation' element={<Reservation />}></Route>
+          </Routes>
           <Main />
-          {/* <Routes>
-            <Route path='/' element={<Main />}></Route>
-          </Routes> */}
           <Specials />
           <Testimonials/>
           <Story />
