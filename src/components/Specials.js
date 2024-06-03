@@ -24,10 +24,10 @@ function Specials() {
     ];
 
     return (
-        <section className='2xl:px-56 sm:px-12 flex flex-col mt-24'>
+        <section className='2xl:px-56 sm:px-12 flex flex-col mt-36'>
             <div className="flex justify-between items-center">
                 <h1 className='text-text-black md:font-bold mt-10 2xl:text-5xl md:text-4xl sm:text-2xl'>This week's specials!</h1>
-                <button className='transition duration-300 text-lg hover:bg-primary-green hover:text-white ease-in-out transform 2xl:w-60 md:w-44 2xl:h-12 sm:h-8 font-bold md:mt-12 sm:w-1/4 bg-primary-yellow rounded-2xl text-text-black mt-8 cursor-pointer'>Online Menu</button>
+                <button className='transition duration-300 text-lg hover:bg-transparent hover:text-primary-green hover:border-primary-green hover:border-2 ease-in-out transform 2xl:w-60 md:w-44 2xl:h-12 sm:h-8 font-bold md:mt-12 sm:w-1/4 bg-primary-yellow rounded-2xl text-text-black mt-8 cursor-pointer'>Online Menu</button>
             </div>
             <div className="grid grid-cols-3 w-full mt-20 gap-40">
                 {dishes.map((dish, index) => (
