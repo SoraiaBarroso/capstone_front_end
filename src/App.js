@@ -3,6 +3,7 @@ import Main from './components/Main'
 import Specials from './components/Specials';
 import Testimonials from './components/Testimonials';
 import Story from './components/Story';
+import Footer from './components/Footer';
 
 import {  Routes, Route } from 'react-router-dom';
 
@@ -24,7 +25,7 @@ function App() {
           <Story />
       </main>
       <footer>
-        Footer
+        <Footer />
       </footer>
     </>
   );
