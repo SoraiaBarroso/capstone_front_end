@@ -11,7 +11,7 @@ function NavBar() {
    };
 
     return (
-        <nav className='flex justify-between items-center 2xl:px-56 sm:px-8 h-24'>
+        <nav className='flex justify-between items-center lg:px-20 2xl:px-56 sm:px-8 lg:h-20 h-24'>
             <Link to="/">
               <img className='sm:w-[12em] 2xl:w-48 md:w-40' src={logo} alt="Logo"/>
             </Link>

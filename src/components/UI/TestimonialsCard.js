@@ -4,7 +4,7 @@ import { IoMdStarHalf } from "react-icons/io";
 
 function TestimonalsCard({name, review, srcPicture}) {
     return(
-        <div className="bg-primary-green col-span-1 sm:w-[24em] sm:place-self-center sm:mt-10 rounded-xl row-span-2 flex flex-col justify-center items-center" data-aos="zoom-in">
+        <div className="bg-primary-green 2xl:w-[24em] lg:w-[18em] lg:h-[14em] col-span-1 sm:w-[24em] sm:place-self-center sm:mt-10 rounded-xl row-span-2 flex flex-col justify-center items-center" data-aos="zoom-in">
                     <div className='flex flex-col w-full justify-center items-center transform -translate-y-10'>
                         <img src={srcPicture} alt="user testimonial" className='rounded-full w-24 h-24 object-cover'></img>
                         <h2 className='text-white text-lg mt-4'>{name}</h2>

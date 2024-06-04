@@ -31,8 +31,8 @@ function Footer() {
 
     return(
         <div className="h-32 border-t-2 2xl:mt-36 2xl:px-56">
-            <div className='flex justify-between 2xl:flex-row sm:flex-col sm:items-center w-full mt-10 mb-10 gap-20'>
-                <img src={logoFooter} alt='logo footer' className='h-44 2xl:pl-20 2xl:pr-40'></img>
+            <div className='flex justify-between 2xl:flex-row lg:flex-row sm:flex-col sm:items-center w-full mt-10 mb-10 gap-20'>
+                <img src={logoFooter} alt='logo footer' className='h-44 lg:h-36 lg:pl-32 2xl:pl-20 2xl:pr-40'></img>
                 {footerData.map((section, index) => (
                     <FooterSection key={index} title={section.title} list={section.list} />
                 ))}
