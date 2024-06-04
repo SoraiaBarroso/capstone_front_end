@@ -12,7 +12,7 @@ function Reservation() {
 
     useEffect(() => {
         setDisabled(!(date && time && guests && occasion && name));
-    }, [date, time, guests, occasion]);
+    }, [date, time, guests, occasion, name]);
 
 
     function hanldeForm(event) {
@@ -21,13 +21,13 @@ function Reservation() {
     }
 
     return (
-        <div className="h-[40em] flex flex-col justify-center items-center relative">
-            <img src={bk_lemon} alt="background lemon" className="absolute -start-20 -bottom-40 -z-10 2xl:w-[20em] sm:w-[14em]"></img>
-            <img src={bk_lemon} alt="background lemon" className="absolute -z-10 -end-20 bottom-24 2xl:w-[20em] sm:w-[14em]"></img>
+        <div className="2xl:h-[40em] sm:h-[50em] flex flex-col justify-center items-center relative">
+            <img src={bk_lemon} alt="background lemon" className="absolute -start-20 sm:-bottom-28 2xl:-bottom-40 -z-10 2xl:w-[20em] sm:w-[14em]"></img>
+            <img src={bk_lemon} alt="background lemon" className="absolute -z-10 -end-20 sm:bottom-72 2xl:bottom-24 2xl:w-[20em] sm:w-[14em]"></img>
 
-            <h1 className="text-4xl mb-12 mt-28 text-primary-green font-bold">Reserve a table</h1>
+            <h1 className="2xl:text-4xl sm:text-3xl mb-12 2xl:mt-28 text-primary-green font-bold">Reserve a table</h1>
 
-            <form className="flex flex-col w-80" onSubmit={hanldeForm}>
+            <form className="flex flex-col 2xl:w-80 sm:w-56" onSubmit={hanldeForm}>
                 <label htmlFor="res-date" className="text-lg text-gray-700">Date:</label>
                 <input
                     required
