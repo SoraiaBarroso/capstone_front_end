@@ -4,7 +4,7 @@ function Main(){
     return (
             <section className='flex lg:px-20 2xl:px-56 2xl:h-[25em] sm:px-8 h-96 text-white bg-primary-green' id='home'>
                 <div className="h-full m-0 w-1/2">
-                    <h1 className='text-primary-yellow font-serif md:font-bold mt-10 2xl:text-4xl md:text-4xl sm:text-4xl'>Little Lemon</h1>
+                    <h1 className='text-primary-yellow font-serif md:font-bold mt-10 2xl:text-5xl md:text-4xl sm:text-4xl'>Little Lemon</h1>
                     <h3 className='mt-2 2xl:text-2xl sm:text-lg font-medium'>Chicago</h3>
                     <p className='2xl:w-3/4 lg:text-lg 2xl:text-lg sm:w-full 2xl:text-md sm:text-sm mt-6'>
                         Welcome to our family-owned Mediterranean restaurant, where tradition meets innovation.

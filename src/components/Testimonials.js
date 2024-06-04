@@ -26,14 +26,14 @@ function Testimonials() {
     return(
         <section id='testimonials' className='2xl:px-56 2xl:mt-52 w-full sm:px-12 flex flex-col justify-center items-center sm:mt-40 relative'>
             <h1 className="text-primary-green text-4xl font-bold">Testimonials</h1>
-            <h3 className='text-primary-orange text-2xl mt-4'>Read what others have to say about us</h3>
+            <h2 className='text-primary-orange text-2xl mt-4'>Read what others have to say about us</h2>
             <div className="grid lg:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-1 w-full lg:gap-16 gap-40 lg:mt-20 mt-28">
                 {testimonials.map((testimonial, index) => (
                     <TestimonalsCard key={index} name={testimonial.name} review={testimonial.review} srcPicture={testimonial.srcPicture}/>
                 ))}
             </div>
-            <img data-aos="fade-up-right" className='absolute 2xl:h-[16em] lg:h-36 lg:start-0 2xl:start-10 h-52 transform 2xl:rotate-[36deg] sm:bottom-20 sm:start-10' alt='lemon background' src={lemonYellow}></img>
-            <img  data-aos="fade-down-left" className='absolute 2xl:h-[16em] lg:h-36 lg:end-0 2xl:end-12 2xl:top-10 -z-50 h-52 transform 6m:top-32 sm:end-12 sm:z-10' alt='lemon background' src={lemonYellow}></img>
+            <img data-aos="fade-up-right" className='absolute 2xl:h-[16em] lg:h-36 lg:start-0 2xl:start-10 2xl:bottom-0 h-52 transform sm:bottom-20 sm:start-10' alt='lemon background' src={lemonYellow}></img>
+            <img  data-aos="fade-down-left" className='absolute 2xl:h-[16em] lg:h-36 lg:end-0 2xl:end-12 2xl:top-4 -z-50 h-52 transform sm:top-32 sm:end-12 sm:z-10' alt='lemon background' src={lemonYellow}></img>
         </section>
     )
 }
