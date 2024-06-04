@@ -19,7 +19,7 @@ function TestimonalsCard({name, review, srcPicture}) {
                         </IconContext.Provider>
                     </div>
                     <div className='flex justify-center items-center mx-10 transform -translate-y-4'>
-                        <p className='text-white text-center'>{review}</p>
+                        <p className='text-white text-center text-lg md:text-md'>{review}</p>
                     </div>
         </div>
     )
