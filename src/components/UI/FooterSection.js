@@ -6,7 +6,7 @@ function FooterSection({title, list}) {
             </h3>
             <ul className='mt-2 [&>*]:opacity-70 [&>*]:leading-8 [&>*]:cursor-pointer 2xl:[&>*]:text-left sm:[&>*]:text-center'>
                 {list.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li className="hover:text-primary-green" key={index}>{item}</li>
                 ))}
             </ul>
         </div>

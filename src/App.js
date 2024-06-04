@@ -1,10 +1,7 @@
 import NavBar from './components/NavBar';
-import Main from './components/Main'
-import Specials from './components/Specials';
-import Testimonials from './components/Testimonials';
-import Story from './components/Story';
 import Footer from './components/Footer';
 import Reservation from './components/Reservation';
+import MainPage from './pages/MainPage'
 
 import {  Routes, Route } from 'react-router-dom';
 
@@ -18,12 +15,9 @@ function App() {
       <NavBar />
       <main>
           <Routes>
-            <Route path='/reservation' element={<Reservation />}></Route>
+            <Route path='/reservation' element={ <Reservation /> }></Route>
+            <Route path='/' element={ <MainPage /> }></Route>
           </Routes>
-          <Main />
-          <Specials />
-          <Testimonials/>
-          <Story />
       </main>
       <footer>
         <Footer />

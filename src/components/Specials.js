@@ -1,7 +1,19 @@
 import lemon_dessert from '../assets/lemon-dessert.jpeg'
 import Card from '../components/UI/Card'
+import React, {useEffect} from "react"
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Specials() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            mirror: true,
+        });
+    }, [])
+
     const dishes = [
         {
             imgSrc: 'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3648&q=80',
@@ -24,7 +36,7 @@ function Specials() {
     ];
 
     return (
-        <section className='2xl:px-56 sm:px-12 flex flex-col 2xl:mt-40 sm:mt-10'>
+        <section className='2xl:px-56 sm:px-12 flex flex-col 2xl:mt-40 sm:mt-10' id='menu'>
             <div className="flex 2xl:flex-row justify-between items-center sm:flex-col">
                 <h1 className='text-text-black md:font-bold mt-10 2xl:text-5xl md:text-4xl sm:font-extrabold sm:text-4xl'>
                     This week's specials!
