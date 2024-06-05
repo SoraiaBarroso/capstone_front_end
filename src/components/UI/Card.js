@@ -7,10 +7,10 @@ function Card({imgSrc, dishName, price, description}) {
                 <div className="w-full flex flex-col px-8 bg-gray-100 justify-around h-[18em]">
                     <div className='flex w-full justify-between h-auto mt-2'>
                         <h2 className='text-xl font-semibold text-text-black'>{dishName}</h2>
-                        <p className='text-xl text-primary-orange font-medium'>{price}</p>
+                        <p className='text-xl text-orange-500 font-medium'>{price}</p>
                     </div>
                     <div className='w-full h-32'>
-                        <p className="text-md text-text-black opacity-85">{description}</p>
+                        <p className="text-md text-text-black">{description}</p>
                     </div>
                     <div className="flex justify-between items-center h-10">
                         <h2 className='font-semibold text-lg pr-4 text-text-black opacity-90'>Order for delivery</h2>

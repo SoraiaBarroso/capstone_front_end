@@ -12,9 +12,20 @@ function Reservation({ availableTimes, dispatch }) {
     const [submitted, setSubmitted] = useState(false);
     const [disabled, setDisabled] = useState(true)
 
+    const [invalid, setInvalid] = useState(false);
+    const [invalidName, setInvalidName] = useState(false);
+
     useEffect(() => {
-        setDisabled(!(date && time && guests && occasion && name));
-    }, [date, time, guests, occasion, name]);
+        setInvalidName(!/^[a-zA-Z\s]*$/.test(name));
+    }, [name]);
+
+    useEffect(() => {
+        setInvalid(isNaN(guests) || guests < 1 || guests > 10);
+    }, [guests]);
+
+    useEffect(() => {
+        setDisabled(!(date && time && guests && occasion && name && invalid && invalidName));
+    }, [date, time, guests, occasion, name, invalid, invalidName]);
 
     function hanldeForm(event) {
         event.preventDefault()
@@ -70,15 +81,17 @@ function Reservation({ availableTimes, dispatch }) {
                 <label htmlFor="guests" className="text-lg mt-6 text-gray-700">Number of guests:</label>
                 <input
                     required
-                    className="h-10 rounded mt-2 border-gray-300 border p-2"
+                    className="h-10 rounded mt-2 border-gray-300 border p-2 invalid:border-red-500 invalid:text-red-500"
                     type="number"
                     id="guests"
                     placeholder="1"
+                    aria-invalid={invalid}
                     min="1"
                     max="10"
                     value={guests}
                     onChange={(e) => setGuests(e.target.value)}
                 />
+                {invalid && <span className="text-red-500 mt-1">Please provide a valid number of guests (1-10).</span>}
                 <label htmlFor="occasion" className="text-lg mt-6 text-gray-700">Occasion:</label>
                 <select
                     id="occasion"
@@ -96,10 +109,12 @@ function Reservation({ availableTimes, dispatch }) {
                     required
                     type="text"
                     id="name"
+                    aria-invalid={invalidName}
                     value={name}
-                    className="h-10 rounded mt-2 border-gray-300 border p-2"
+                    className={`h-10 rounded mt-2 border p-2 ${invalidName ? 'border-red-500' : 'border-gray-300'}`}
                     onChange={(e) => setName(e.target.value)}
                 />
+                {invalidName && <span className="text-red-500 mt-1">Please provide a valid name (letters only).</span>}
                 <input
                      className="mt-10 disabled:opacity-50 disabled:cursor-not-allowed text-lg cursor-pointer p-2 rounded-xl bg-primary-yellow" 
                      type="submit"
