@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import Reservation from './components/Reservation';
 import MainPage from './pages/MainPage'
+import BookingPage from './pages/BookinPage';
 
 import {  Routes, Route } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ function App() {
       <NavBar />
       <main>
           <Routes>
-            <Route path='/reservation' element={ <Reservation /> }></Route>
+            <Route path='/reservation' element={ <BookingPage /> }></Route>
             <Route path='/' element={ <MainPage /> }></Route>
           </Routes>
       </main>

@@ -1,5 +1,6 @@
 import logoFooter from '../assets/logo-footer.png'
 import FooterSection from './UI/FooterSection'
+import { Link } from 'react-router-dom';
 
 function Footer() {
     const footerData = [
@@ -32,7 +33,9 @@ function Footer() {
     return(
         <div className="h-32 md:mt-48 border-t-2 2xl:mt-36 2xl:px-56">
             <div className='flex justify-between md:flex-row 2xl:flex-row lg:flex-row sm:flex-col sm:items-center w-full mt-10 mb-10 gap-20'>
-                <img src={logoFooter} alt='logo footer' className='h-44 md:h-28 md:ml-10 lg:h-36 lg:pl-32 2xl:pl-20 2xl:pr-40'></img>
+                <Link to="/">
+                    <img src={logoFooter} alt='logo footer' className='h-44 md:h-28 md:ml-10 lg:h-36 lg:pl-32 2xl:pl-20 2xl:pr-40'></img>
+                </Link>
                 {footerData.map((section, index) => (
                     <FooterSection key={index} title={section.title} list={section.list} />
                 ))}

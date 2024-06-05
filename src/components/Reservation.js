@@ -1,23 +1,36 @@
 import React, { useState, useEffect } from "react";
 import bk_lemon from '../assets/bk-lemon.png'
+import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
-function Reservation() {
+function Reservation({ availableTimes, dispatch }) {
     const [date, setDate] = useState("");
     const [name, setName] = useState("");
     const [time, setTime] = useState("");
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("");
-
+    const [submitted, setSubmitted] = useState(false);
     const [disabled, setDisabled] = useState(true)
 
     useEffect(() => {
         setDisabled(!(date && time && guests && occasion && name));
     }, [date, time, guests, occasion, name]);
 
-
     function hanldeForm(event) {
         event.preventDefault()
         console.log({ date, time, guests, occasion });
+        setSubmitted(true);
+    }
+
+    if (submitted) {
+        return (
+             <div className="2xl:h-[40em] sm:h-[50em] flex flex-col justify-center items-center relative">
+                <img src={bk_lemon} alt="background lemon" className="absolute -start-20 sm:-bottom-28 2xl:-bottom-40 -z-10 2xl:w-[20em] sm:w-[14em]"></img>
+                <img src={bk_lemon} alt="background lemon" className="absolute -z-10 -end-20 sm:bottom-72 2xl:bottom-24 2xl:w-[20em] sm:w-[14em]"></img>
+                <IoCheckmarkDoneCircle size="6em" className="text-green-400"/>
+                <h1 className="2xl:text-5xl sm:text-3xl mb-12 2xl:mt-10 text-primary-green font-bold">Thank you {name}!</h1>
+                <p className="2xl:text-2xl text-text-black">Your reservation has been made</p>
+             </div>
+        );
     }
 
     return (
@@ -45,12 +58,9 @@ function Reservation() {
                     onChange={(e) => setTime(e.target.value)}
                 >
                     <option value="" disabled>Select a Time</option>
-                    <option value="17:00">17:00</option>
-                    <option value="18:00">18:00</option>
-                    <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                    <option value="21:00">21:00</option>
-                    <option value="22:00">22:00</option>
+                    {availableTimes.map((time) => (
+                        <option key={time} value={time}>{time}</option>
+                    ))}
                 </select>
                 <label htmlFor="guests" className="text-lg mt-6 text-gray-700">Number of guests:</label>
                 <input
