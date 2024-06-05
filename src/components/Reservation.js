@@ -36,8 +36,8 @@ function Reservation({ availableTimes, dispatch }) {
     if (submitted) {
         return (
              <div className="2xl:h-[40em] sm:h-[50em] flex flex-col justify-center items-center relative">
-                <img src={bk_lemon} alt="background lemon" className="absolute -start-20 sm:-bottom-28 2xl:-bottom-40 -z-10 2xl:w-[20em] sm:w-[14em]"></img>
-                <img src={bk_lemon} alt="background lemon" className="absolute -z-10 -end-20 sm:bottom-72 2xl:bottom-24 2xl:w-[20em] sm:w-[14em]"></img>
+                <img loading="lazy" src={bk_lemon} alt="background lemon" className="absolute -start-20 sm:-bottom-28 2xl:-bottom-40 -z-10 2xl:w-[20em] sm:w-[14em]"></img>
+                <img loading="lazy" src={bk_lemon} alt="background lemon" className="absolute -z-10 -end-20 sm:bottom-72 2xl:bottom-24 2xl:w-[20em] sm:w-[14em]"></img>
                 <IoCheckmarkDoneCircle size="6em" className="text-green-400"/>
                 <h1 className="2xl:text-5xl sm:text-3xl mb-12 2xl:mt-10 sm:mt-6 text-primary-green font-bold">Thank you {name}!</h1>
                 <p className="2xl:text-2xl sm:text-lg text-text-black">Your reservation has been made</p>
@@ -51,8 +51,8 @@ function Reservation({ availableTimes, dispatch }) {
 
     return (
         <div className="2xl:h-[40em] sm:h-[50em] flex flex-col justify-center items-center relative">
-            <img src={bk_lemon} alt="background lemon" className="absolute -start-20 sm:-bottom-28 2xl:-bottom-40 -z-10 2xl:w-[20em] sm:w-[14em]"></img>
-            <img src={bk_lemon} alt="background lemon" className="absolute -z-10 -end-20 sm:bottom-72 2xl:bottom-24 2xl:w-[20em] sm:w-[14em]"></img>
+            <img loading="lazy" src={bk_lemon} alt="background lemon" className="absolute -start-20 sm:-bottom-28 2xl:-bottom-40 -z-10 2xl:w-[20em] sm:w-[14em]"></img>
+            <img loading="lazy" src={bk_lemon} alt="background lemon" className="absolute -z-10 -end-20 sm:bottom-72 2xl:bottom-24 2xl:w-[20em] sm:w-[14em]"></img>
 
             <h1 className="2xl:text-4xl sm:text-3xl mb-12 2xl:mt-28 text-primary-green font-bold">Reserve a table</h1>
 

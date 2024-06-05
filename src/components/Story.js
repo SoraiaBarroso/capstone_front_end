@@ -15,8 +15,8 @@ function Story() {
                 </p>
             </div>
             <div className="2xl:w-1/2 2xl:h-full lg:w-2/5 flex relative sm:h-[34em] sm:mt-16 sm:w-3/5">
-                <img src={cookers1} data-aos="fade-right" alt='founders' className='2xl:w-1/2 2xl:h-96 lg:w-[14em] lg:h-80 sm:w-[21em] object-cover absolute lg:start-20 2xl:start-0 sm:end-0 rounded-xl z-20'></img>
-                <img src={cookers2} data-aos="fade-left" alt='founders' className='2xl:w-1/2 2xl:h-96 lg:w-[14em] lg:h-80 sm:w-[21em] object-cover absolute 2xl:start-48 lg:start-48 lg:bottom-20 2xl:bottom-0 sm:start-0 sm:bottom-40 rounded-xl'></img>
+                <img loading="lazy" src={cookers1} data-aos="fade-right" alt='founders' className='2xl:w-1/2 2xl:h-96 lg:w-[14em] lg:h-80 sm:w-[21em] object-cover absolute lg:start-20 2xl:start-0 sm:end-0 rounded-xl z-20'></img>
+                <img loading="lazy" src={cookers2} data-aos="fade-left" alt='founders' className='2xl:w-1/2 2xl:h-96 lg:w-[14em] lg:h-80 sm:w-[21em] object-cover absolute 2xl:start-48 lg:start-48 lg:bottom-20 2xl:bottom-0 sm:start-0 sm:bottom-40 rounded-xl'></img>
             </div>
         </section>
     )

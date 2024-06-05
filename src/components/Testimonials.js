@@ -32,8 +32,8 @@ function Testimonials() {
                     <TestimonalsCard key={index} name={testimonial.name} review={testimonial.review} srcPicture={testimonial.srcPicture}/>
                 ))}
             </div>
-            <img data-aos="fade-up-right" className='absolute 2xl:h-[16em] lg:h-36 lg:start-0 2xl:start-10 2xl:bottom-0 h-52 transform sm:bottom-20 sm:start-10' alt='lemon background' src={lemonYellow}></img>
-            <img  data-aos="fade-down-left" className='absolute 2xl:h-[16em] lg:h-36 lg:end-0 2xl:end-12 2xl:top-4 -z-50 h-52 transform sm:top-32 sm:end-12 sm:z-10' alt='lemon background' src={lemonYellow}></img>
+            <img loading="lazy" data-aos="fade-up-right" className='absolute 2xl:h-[16em] lg:h-36 lg:start-0 2xl:start-10 2xl:bottom-0 h-52 transform sm:bottom-20 sm:start-10' alt='lemon background' src={lemonYellow}></img>
+            <img loading="lazy" data-aos="fade-down-left" className='absolute 2xl:h-[16em] lg:h-36 lg:end-0 2xl:end-12 2xl:top-4 -z-50 h-52 transform sm:top-32 sm:end-12 sm:z-10' alt='lemon background' src={lemonYellow}></img>
         </section>
     )
 }
