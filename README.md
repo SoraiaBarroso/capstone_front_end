@@ -4,6 +4,12 @@ This project is the capstone project for a series of 9 courses in a professional
 
 ## Features
 - Responsive design
+- Full restaurant page including:
+  - Home
+  - About
+  - Menu
+  - Testimonials
+  - Footer
 - Form with user validation and error messages
 - Components designed in Figma
 - Variant management for components
