@@ -1,5 +1,13 @@
 # Capstone Project Front End Development Proffesional Certificate
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Wireframes and Mockups](#wireframes-and-mockups)
+5. [Installation](#installation)
+
+## Introduction
 This project is the capstone project for a series of 9 courses in a professional certificate program by Meta focused on front-end development. Throughout the program, I have learned HTML, CSS, JavaScript, UX/UI design, and React. This project showcases the culmination of these skills in a responsive web application that features a restaurant.
 
 ## Features
