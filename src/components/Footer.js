@@ -31,7 +31,7 @@ function Footer() {
     ];
 
     return(
-        <div className="h-32 md:mt-48 border-t-2 2xl:mt-36 2xl:px-56">
+        <div className="h-32  border-t-2 2xl:px-56">
             <div className='flex justify-between items-center flex-col md:flex-row sm:flex-col sm:items-center w-full mt-10 mb-10 gap-20'>
                 <Link to="/">
                     <img loading="lazy" src={logoFooter} alt='logo footer' className='h-44 md:h-28 md:ml-10 lg:h-36 lg:pl-32 2xl:pl-20 2xl:pr-40'></img>
