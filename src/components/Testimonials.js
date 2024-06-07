@@ -24,7 +24,7 @@ function Testimonials() {
     ];
 
     return(
-        <section id='testimonials' className='2xl:px-56 2xl:mt-52 w-full sm:px-12 flex flex-col justify-center items-center sm:mt-40 relative'>
+        <section id='testimonials' className='2xl:px-56 mt-36 2xl:mt-52 w-full sm:px-12 flex flex-col justify-center items-center sm:mt-40 relative'>
             <h1 className="text-primary-green text-4xl font-bold">Testimonials</h1>
             <h2 className='text-primary-orange text-2xl mt-4'>Read what others have to say about us</h2>
             <div className="grid lg:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-1 w-full lg:gap-16 gap-40 lg:mt-20 mt-28">

@@ -36,16 +36,16 @@ function Specials() {
     ];
 
     return (
-        <section className='2xl:px-56 lg:px-20 sm:px-12 flex flex-col lg:mt-24 2xl:mt-40 sm:mt-10' id='menu'>
-            <div className="flex 2xl:flex-row lg:flex-row justify-between items-center sm:flex-col">
-                <h1 className='text-text-black md:font-bold mt-10 2xl:text-5xl md:text-4xl sm:font-extrabold sm:text-4xl'>
+        <section className='px-6 2xl:px-56 lg:px-20 sm:px-12 flex flex-col lg:mt-24 2xl:mt-40 sm:mt-10' id='menu'>
+            <div className="flex lg:flex-row justify-between items-center flex-col">
+                <h1 className='text-text-black text-2xl font-bold md:font-bold mt-10 2xl:text-5xl md:text-4xl sm:font-extrabold sm:text-4xl'>
                     This week's specials!
                 </h1>
-                <button className='transition duration-300 lg:text-lg 2xl:text-lg sm:text-sm hover:bg-transparent hover:text-primary-green hover:border-primary-green hover:border-2 ease-in-out transform 2xl:w-60 md:w-44 2xl:h-12 lg:h-10 sm:h-8 font-bold md:mt-12 sm:w-1/4 bg-primary-yellow rounded-2xl text-text-black mt-8 cursor-pointer'>
+                <button className='px-2 py-1 text-sm transition duration-300 lg:text-lg sm:text-sm hover:bg-transparent hover:text-primary-green hover:border-primary-green hover:border-2 ease-in-out transform 2xl:w-60 md:w-44 2xl:h-12 lg:h-10 sm:h-8 font-bold md:mt-12 sm:w-1/4 bg-primary-yellow rounded-2xl text-text-black mt-8 cursor-pointer'>
                     Online Menu
                 </button>
             </div>
-            <div className="grid 2xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 w-full mt-20 sm:gap-20 2xl:gap-40">
+            <div className="grid 2xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 w-full place-self-center sm:w-full mt-20 gap-20 sm:gap-20 2xl:gap-40">
                 {dishes.map((dish, index) => (
                     <Card
                         key={index}
