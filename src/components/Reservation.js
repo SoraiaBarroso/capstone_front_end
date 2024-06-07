@@ -24,7 +24,7 @@ function Reservation({ availableTimes, dispatch }) {
     }, [guests]);
 
     useEffect(() => {
-        setDisabled(!(date && time && guests && occasion && name && invalid && invalidName));
+        setDisabled(!(date && time && guests && occasion && name && !invalid && !invalidName));
     }, [date, time, guests, occasion, name, invalid, invalidName]);
 
     function hanldeForm(event) {
@@ -114,7 +114,7 @@ function Reservation({ availableTimes, dispatch }) {
                     className={`sm:h-10 h-8 rounded mt-2 border p-2 ${invalidName ? 'border-red-500' : 'border-gray-300'}`}
                     onChange={(e) => setName(e.target.value)}
                 />
-                {invalidName && <span className="text-red-500 mt-1">Please provide a valid name (letters only).</span>}
+                {!invalidName && <span className="text-red-500 mt-1">Please provide a valid name (letters only).</span>}
                 <input
                      className="mt-10 px-3 py-1 text-sm disabled:opacity-50 disabled:cursor-not-allowed sm:text-lg cursor-pointer p-2 rounded-xl bg-primary-yellow" 
                      type="submit"
