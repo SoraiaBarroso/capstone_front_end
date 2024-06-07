@@ -35,14 +35,14 @@ function Reservation({ availableTimes, dispatch }) {
 
     if (submitted) {
         return (
-             <div className="2xl:h-[40em] sm:h-[50em] flex flex-col justify-center items-center relative">
+             <div className="2xl:h-[40em] h-[45em] sm:h-[50em] flex flex-col justify-center items-center relative">
                 <img loading="lazy" src={bk_lemon} alt="background lemon" className="absolute w-36 -bottom-6 -start-20 sm:-bottom-28 2xl:-bottom-40 -z-10 2xl:w-[20em] sm:w-[14em]"></img>
                 <img loading="lazy" src={bk_lemon} alt="background lemon" className="absolute w-36 bottom-[28em] -z-10 -end-20 sm:bottom-72 2xl:bottom-24 2xl:w-[20em] sm:w-[14em]"></img>
                 <IoCheckmarkDoneCircle size="6em" className="text-green-400"/>
-                <h1 className="2xl:text-5xl sm:text-3xl mb-12 2xl:mt-10 sm:mt-6 text-primary-green font-bold">Thank you {name}!</h1>
-                <p className="2xl:text-2xl sm:text-lg text-text-black">Your reservation has been made</p>
-                <p className="2xl:text-2xl sm:text-lg mt-2 text-text-black">We will see you {date} at {time}</p>
-                <Link to="/" className='transition duration-300 flex justify-center items-center lg:text-lg 2xl:text-lg sm:text-sm hover:bg-transparent hover:text-primary-green hover:border-primary-green hover:border-2 ease-in-out transform 2xl:w-60 md:w-44 2xl:h-12 lg:h-10 sm:h-8 font-bold md:mt-12 sm:w-1/4 bg-primary-green text-white rounded-2xl mt-8 cursor-pointer'>
+                <h1 className="text-3xl mt-6 2xl:text-5xl sm:text-3xl mb-12 2xl:mt-10 sm:mt-6 text-primary-green font-bold">Thank you {name}!</h1>
+                <p className="text-lg 2xl:text-2xl sm:text-lg text-text-black">Your reservation has been made</p>
+                <p className="text-lg 2xl:text-2xl sm:text-lg mt-2 text-text-black">We will see you {date} at {time}</p>
+                <Link to="/" className='w-32 px-3 py-1 text-sm transition duration-300 flex justify-center items-center lg:text-lg 2xl:text-lg sm:text-sm hover:bg-transparent hover:text-primary-green hover:border-primary-green hover:border-2 ease-in-out transform 2xl:w-60 md:w-44 2xl:h-12 lg:h-10 sm:h-8 font-bold md:mt-12 sm:w-1/4 bg-primary-green text-white rounded-2xl mt-8 cursor-pointer'>
                     Home
                 </Link>
              </div>
@@ -114,7 +114,7 @@ function Reservation({ availableTimes, dispatch }) {
                     className={`sm:h-10 h-8 rounded mt-2 border p-2 ${invalidName ? 'border-red-500' : 'border-gray-300'}`}
                     onChange={(e) => setName(e.target.value)}
                 />
-                {!invalidName && <span className="text-red-500 mt-1">Please provide a valid name (letters only).</span>}
+                {invalidName && <span className="text-red-500 mt-1">Please provide a valid name (letters only).</span>}
                 <input
                      className="mt-10 px-3 py-1 text-sm disabled:opacity-50 disabled:cursor-not-allowed sm:text-lg cursor-pointer p-2 rounded-xl bg-primary-yellow" 
                      type="submit"
