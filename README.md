@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Capstone Project Front End Development Proffesional Certificate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Wireframes and Mockups](#wireframes-and-mockups)
+5. [Installation](#installation)
 
-## Available Scripts
+## Introduction
+This project is the capstone project for a series of 9 courses in a professional certificate program by Meta focused on front-end development. Throughout the program, I have learned HTML, CSS, JavaScript, UX/UI design, and React. This project showcases the culmination of these skills in a responsive web application that features a restaurant.
 
-In the project directory, you can run:
+## Features
+- Responsive design
+- Full restaurant page including:
+  - Home
+  - About
+  - Menu
+  - Testimonials
+  - Footer
+- Form with user validation and error messages
+- Components designed in Figma
+- Variant management for components
 
-### `npm start`
+## Technologies Used
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **React**
+- **Figma** (for wireframing and mockups)
+- **UX/UI Design**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wireframes and Mockups
+The design process began with creating a wireframe in Figma, which laid the foundation for the layout and structure of the application, Components such as buttons were designed and variants were created to ensure consistency.
+### Wireframes
+![Captura de pantalla 2024-06-06 193433](https://github.com/SoraiaBarroso/capstone_front_end/assets/115974717/7b9a40c5-4c3f-44ed-948d-8456e26ef951)
+### Component
+![Captura de pantalla 2024-06-06 193443](https://github.com/SoraiaBarroso/capstone_front_end/assets/115974717/b11c6fc9-d090-4680-bc47-123e0b944ff2)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
+To set up the project locally, follow these steps:
 
-### `npm test`
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/projectname.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Navigate to the project directory
+cd projectname
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Install dependencies
+npm install
