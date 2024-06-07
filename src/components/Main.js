@@ -11,7 +11,7 @@ function Main(){
                         Nestled in the heart of the city, our cozy and inviting atmosphere is perfect for any occasion,
                         from a casual lunch to a special dinner with loved ones.
                     </p>
-                    <button className='text-sm px-2 py-1 transition duration-300 sm:text-sm lg:text-lg lg:h-10 hover:bg-transparent hover:text-primary-yellow hover:border-2 hover:border-primary-yellow 2xl:w-1/4 md:w-44 2xl:h-12 sm:h-8 2xl:font-extrabold font-bold 2xl:text-lg md:mt-12 2xl:mt-10 sm:w-[10em] bg-primary-yellow rounded-2xl text-text-black mt-8 cursor-pointer'>Reserve a table</button>
+                    <button className='text-sm px-3 py-1 transition duration-300 sm:text-sm lg:text-lg lg:h-10 hover:bg-transparent hover:text-primary-yellow hover:border-2 hover:border-primary-yellow 2xl:w-1/4 md:w-44 2xl:h-12 sm:h-8 2xl:font-extrabold font-bold 2xl:text-lg md:mt-12 2xl:mt-10 sm:w-[10em] bg-primary-yellow rounded-2xl text-text-black mt-8 cursor-pointer'>Reserve a table</button>
                 </div>
                 <div className="w-1/2 hidden m-0 h-full sm:flex justify-end items-center">
                     <img loading='eager' className="2xl:mt-24 lg:mt-24 lg:h-full 2xl:h-full sm:w-3/4 sm:h-3/4 2xl:w-3/4 md:w-[20em] object-cover rounded-lg" src={dish} alt="main"/>
