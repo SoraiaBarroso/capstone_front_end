@@ -4,6 +4,7 @@ import MainPage from './pages/MainPage'
 import BookingPage from './pages/BookinPage';
 
 import {  Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
+      <Analytics/>
     </>
   );
 }
