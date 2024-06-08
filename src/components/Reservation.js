@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import bk_lemon from '../assets/bk-lemon.png'
+import bk_lemon from '../assets/bk-lemon.webp'
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { Link } from "react-router-dom";
 

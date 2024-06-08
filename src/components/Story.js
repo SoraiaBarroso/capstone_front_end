@@ -1,5 +1,5 @@
-import cookers1 from '../assets/cookers1.jpg'
-import cookers2 from '../assets/cookers2.jpg'
+import cookers1 from '../assets/cookers1.webp'
+import cookers2 from '../assets/cookers2.webp'
 
 function Story() {
     return(

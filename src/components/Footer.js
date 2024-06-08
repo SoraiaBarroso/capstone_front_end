@@ -1,4 +1,4 @@
-import logoFooter from '../assets/logo-footer.png'
+import logoFooter from '../assets/logo-footer.webp'
 import FooterSection from './UI/FooterSection'
 import { Link } from 'react-router-dom';
 

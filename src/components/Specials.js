@@ -1,4 +1,4 @@
-import lemon_dessert from '../assets/lemon-dessert.jpeg'
+import lemon_dessert from '../assets/lemon-dessert.webp'
 import Card from '../components/UI/Card'
 import React, {useEffect} from "react"
 

@@ -1,4 +1,4 @@
-import dish from '../assets/restauranfood.jpg';
+import dish from '../assets/restauranfood.webp';
 
 function Main(){
     return (
