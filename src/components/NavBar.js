@@ -13,7 +13,7 @@ function NavBar() {
     return (
         <nav className='overflow-hidden flex justify-between items-center px-6 lg:px-20 2xl:px-56 sm:px-8 lg:h-20 h-24 border-b-2 border-primary-green'>
             <Link to="/">
-              <img className='sm:w-[12em] w-auto 2xl:w-48 md:w-40' src={logo} alt="Logo"/>
+              <img className='sm:w-[12em] w-[11em] 2xl:w-48 md:w-[12em]' src={logo} alt="Logo"/>
             </Link>
             <div className='flex justify-center items-center lg:hidden 2xl:hidden cursor-pointer group' onClick={handleMenuToggle}>
               <RxHamburgerMenu size="2em"/>
