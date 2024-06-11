@@ -22,7 +22,7 @@ function NavBar() {
                 <li><Link  to="/"  onClick={handleMenuToggle} className='hover:text-primary-green'>Home</Link></li>
                 <li><a href='/#about' onClick={handleMenuToggle} className='hover:text-primary-green'>About</a></li>
                 <li><a href='/#menu' onClick={handleMenuToggle} className='hover:text-primary-green'>Menu</a></li>
-                <li><Link to="/reservation" onClick={handleMenuToggle} className='hover:text-primary-green focus:bg-primary-green focus:text-white rounded-md focus:p-2'>Reservations</Link></li>
+                <li><Link to="/reservation" onClick={handleMenuToggle} className='hover:text-primary-green'>Reservations</Link></li>
                 <li><a href='/#testimonials' onClick={handleMenuToggle} className='hover:text-primary-green'>Testimonials</a></li>
                 <li><Link to="/" onClick={handleMenuToggle} className='hover:text-primary-green'>Login</Link></li>
             </ul>
