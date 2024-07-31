@@ -6,7 +6,7 @@ function Main(){
                 <div className="h-full flex flex-col items-center sm:items-start w-full m-0 md:w-1/2 sm:w-1/2 lg:w-1/2 2xl:w-1/2">
                     <h1 className='text-primary-yellow text-4xl font-bold text-center sm:text-left font-serif md:font-bold mt-10 2xl:text-5xl md:text-4xl sm:text-4xl'>Little Lemon</h1>
                     <h2 className='mt-2 text-center sm:text-left 2xl:text-2xl text-lg sm:text-lg font-medium'>Chicago</h2>
-                    <p className='2xl:w-3/4 text-md text-center sm:text-left lg:text-lg md:text-base 2xl:text-lg sm:w-full 2xl:text-md sm:text-sm mt-6'>
+                    <p className='2xl:w-3/4 text-center sm:text-left lg:text-lg 2xl:text-lg sm:w-full 2xl:text-md sm:text-sm mt-6'>
                         Welcome to our family-owned Mediterranean restaurant, where tradition meets innovation.
                         Nestled in the heart of the city, our cozy and inviting atmosphere is perfect for any occasion,
                         from a casual lunch to a special dinner with loved ones.
